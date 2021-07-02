@@ -1,0 +1,13 @@
+make app.js file
+
+npm init
+npm install express
+npm install pug
+
+create views folder
+
+create static folder
+
+in views create pug file
+
+in static create js and css file

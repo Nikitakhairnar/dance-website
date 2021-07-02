@@ -1,0 +1,62 @@
+//- index.pug
+doctype html
+html
+  head
+    title J-hope's dance academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+      ul
+        div#logo
+          img(src="/static/logo1.jpg")
+          h4 JDA
+        li #[a(href="/") Home]
+        li #[a(href="/") About]
+        li #[a(href="/") Services]
+        li #[a(href="/") Class Info]
+        li #[a(href="/") Contact Us]
+
+    section#introSection
+      div Welcome to J-Hope's dance academy
+      div.small Let's just dance
+
+    section#missionSection
+      h2 Our Mission
+      div.card
+        h3 Dance Perfection
+        div.card-box
+          div.card-img
+            img(src="/static/bg3.jpg")
+          div.card-content
+            P Dance perfectly with the perfect dance academy ever
+
+      div.card
+        h3 Learn k-pop choreo
+        div.card-box
+          div.card-img
+            img(src="/static/k.jpg")
+          div.card-content
+            P Learn every k-pop choreo and match steps with your bias
+
+      div.card
+        h3 Dance the way you like
+        div.card-box
+          div.card-img
+            img(src="/static/bg4.jpg")
+          div.card-content
+            P Follow the beat and just dance the way you want
+
+    section#sponsorSection
+      h2 Our sponsors
+      div#sponsors
+        img(src="/static/apple.jfif", alt="sponsor image", class="spImage")
+        img(src="/static/hp.png", alt="sponsor image", class="spImage")
+        img(src="/static/microsoft.png", alt="sponsor image", class="spImage")
+        img(src="/static/skype.png", alt="sponsor image", class="spImage")
+
+    footer#footer
+      | copyright © 2013 Jhopedanceacademy.com | All rights reserved
+
+    script
+      include ../static/index.js

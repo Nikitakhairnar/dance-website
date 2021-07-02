@@ -1,0 +1,47 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style
+  style
+    include ../static/style.css
+
+block content
+  section#introSection
+    div Welcome to J-Hope's dance academy
+    div.small Let's just dance
+
+  section#missionSection
+    h2 Our Mission
+    div.card
+      h3 Dance Perfection
+      div.card-box
+        div.card-img
+          img(src="/static/bg3.jpg")
+        div.card-content
+          P Dance perfectly with the perfect dance academy ever
+
+    div.card
+      h3 Learn k-pop choreo
+      div.card-box
+        div.card-img
+          img(src="/static/k.jpg")
+        div.card-content
+          P Learn every k-pop choreo and match steps with your bias
+
+    div.card
+      h3 Dance the way you like
+      div.card-box
+        div.card-img
+          img(src="/static/bg4.jpg")
+        div.card-content
+          P Follow the beat and just dance the way you want
+
+  section#sponsorSection
+    h2 Our sponsors
+    div#sponsors
+      img(src="/static/apple.jfif", alt="sponsor image", class="spImage")
+      img(src="/static/hp.png", alt="sponsor image", class="spImage")
+      img(src="/static/microsoft.png", alt="sponsor image", class="spImage")
+      img(src="/static/skype.png", alt="sponsor image", class="spImage")
